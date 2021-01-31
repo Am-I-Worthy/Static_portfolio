@@ -28,7 +28,8 @@ class _HeadAndSubState extends State<HeadAndSub> {
                 fontSize: 18.0,
                 color: Colors.white,
                 letterSpacing: 1.2),
-            textAlign: TextAlign.left,
+            textAlign:
+                widget.alignRight != null ? TextAlign.right : TextAlign.left,
           ),
           SizedBox(
             height: 10.0,
@@ -40,7 +41,8 @@ class _HeadAndSubState extends State<HeadAndSub> {
                 fontSize: 16.0,
                 color: Colors.white,
                 letterSpacing: 1.2),
-            textAlign: TextAlign.left,
+            textAlign:
+                widget.alignRight != null ? TextAlign.right : TextAlign.left,
           ),
         ],
       ),

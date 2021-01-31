@@ -22,7 +22,7 @@ class _ThirdPageState extends State<ThirdPage> {
             child: PageReference("03"),
           ),
           Positioned(
-            top: 50.0,
+            bottom: 150.0,
             left: MediaQuery.of(context).size.width * 0.1,
             child: Column(
               children: [
@@ -49,19 +49,21 @@ class _ThirdPageState extends State<ThirdPage> {
               ],
             ),
           ),
-          Positioned(
-            bottom: 150,
-            left: MediaQuery.of(context).size.width * 0.26,
-            child: Container(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: NetworkImage(
-                          "https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"),
-                      fit: BoxFit.cover)),
-              width: MediaQuery.of(context).size.width * 0.16,
-              height: MediaQuery.of(context).size.height * 0.75,
-            ),
-          ),
+          MediaQuery.of(context).size.width < 1115
+              ? Container()
+              : Positioned(
+                  bottom: 150,
+                  left: MediaQuery.of(context).size.width * 0.26,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: NetworkImage(
+                                "https://images.unsplash.com/photo-1564078516393-cf04bd966897?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"),
+                            fit: BoxFit.cover)),
+                    width: MediaQuery.of(context).size.width * 0.16,
+                    height: MediaQuery.of(context).size.height * 0.75,
+                  ),
+                ),
           Positioned(
             bottom: 150.0,
             right: 125.0,

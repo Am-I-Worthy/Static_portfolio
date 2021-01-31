@@ -19,6 +19,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
+    print(MediaQuery.of(context).size.width * 0.4);
     return Scaffold(
       backgroundColor: Color(0xff242424),
       body: SingleChildScrollView(
@@ -42,9 +43,6 @@ class _MyAppState extends State<MyApp> {
               height: 150,
             ),
             FifthPage(),
-            SizedBox(
-              height: 150,
-            ),
           ],
         ),
       ),

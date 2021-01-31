@@ -30,7 +30,7 @@ class _SecondPageState extends State<SecondPage> {
         ),
         Positioned(
           top: 70.0,
-          right: MediaQuery.of(context).size.height * 0.3,
+          right: MediaQuery.of(context).size.width * 0.1,
           child: HeaderText(
             text: "MORGAN MAXWELL",
             width: 450,
@@ -44,21 +44,24 @@ class _SecondPageState extends State<SecondPage> {
         Positioned(
           bottom: 160.0,
           left: MediaQuery.of(context).size.width * 0.2,
-          child: HeadAndSub(
-            head: "YEARS OF EXPERIENCE",
-            sub:
-                "Presentations are communication tools that can be used as demonstrations",
-            width: 200,
-          ),
-        ),
-        Positioned(
-          bottom: 160.0,
-          left: MediaQuery.of(context).size.width * 0.4,
-          child: HeadAndSub(
-            head: "SPECIALISATION",
-            sub:
-                "Presentations are communication tools that can be used as demonstrations",
-            width: 200,
+          child: Row(
+            children: [
+              HeadAndSub(
+                head: "YEARS OF EXPERIENCE",
+                sub:
+                    "Presentations are communication tools that can be used as demonstrations",
+                width: 200,
+              ),
+              SizedBox(
+                width: 50.0,
+              ),
+              HeadAndSub(
+                head: "SPECIALISATION",
+                sub:
+                    "Presentations are communication tools that can be used as demonstrations",
+                width: 200,
+              ),
+            ],
           ),
         ),
       ],

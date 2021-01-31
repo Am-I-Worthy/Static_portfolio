@@ -41,7 +41,7 @@ class _FourthPageState extends State<FourthPage> {
           ),
           Positioned(
             top: 100,
-            right: 150,
+            right: MediaQuery.of(context).size.width < 970 ? 50 : 150,
             child: Column(
               children: [
                 HeadAndSub(
@@ -49,7 +49,7 @@ class _FourthPageState extends State<FourthPage> {
                   head: "PHASE-1",
                   sub:
                       "Presentations are communication tools that can be used as demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -58,7 +58,7 @@ class _FourthPageState extends State<FourthPage> {
                   alignRight: true,
                   head: "PHASE-2",
                   sub: "communication tools that can be used as demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -68,7 +68,7 @@ class _FourthPageState extends State<FourthPage> {
                   head: "PHASE-3",
                   sub:
                       "Presentations  tools that can be used as demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -78,7 +78,7 @@ class _FourthPageState extends State<FourthPage> {
                   head: "PHASE-4",
                   sub:
                       "Presentations are communication tools that can demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -88,7 +88,7 @@ class _FourthPageState extends State<FourthPage> {
                   head: "PHASE-5",
                   sub:
                       "Presentations are communication  can be used as demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -98,7 +98,7 @@ class _FourthPageState extends State<FourthPage> {
                   head: "PHASE-6",
                   sub:
                       "Presentations are communication tools that can be used as demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
                 SizedBox(
                   height: 20,
@@ -108,7 +108,7 @@ class _FourthPageState extends State<FourthPage> {
                   head: "PHASE-7",
                   sub:
                       "Presentations are communication tools that can be used as demonstrations",
-                  width: 700,
+                  width: MediaQuery.of(context).size.width * 0.3,
                 ),
               ],
             ),
